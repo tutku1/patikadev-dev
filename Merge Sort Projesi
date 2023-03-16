@@ -1,0 +1,38 @@
+Array = [16,21,11,8,12,22] 
+Dizinin sort türüne göre aşamaları:
+Önce gruplandıralım 
+ [16,21] [11,8] [12,22]
+ 
+ [16,21] grubunda en küçük 16
+ [11,8] grubunda en küçük 8 
+ [12,22] grubunda en küçük 12
+ 
+ [16,8,12] kendi içinde gruplandıralım
+ [16,8] [12]
+ [16,8] grubunda en küçük 8
+ [12] tek elemen 
+ [8,12,16]
+ 
+ diğer grup 
+ [21,11,22]
+ gruplandıralım
+ [21,11] [22]
+ [21,11] grubunda en küçük 11
+ [22] tek elemen 
+ [11,22,21]
+ tekrar gruplandırıyoruz
+ [11] [22,21]
+ [11] tek eleman 
+ [22,21] en küçük eleman 21 
+ [11,21,22]
+ 
+ İlk grupla son grubu birleştirelim
+ [8,12,16,11,21,22]
+ tekrar gruplandıralım 
+ [8,12] en küçük eleman 8 
+ [16,11] en küçük eleman 11
+ [21,22] en küçük elaman 21
+ Birleştirelim
+ [8,12,11,16,21,22]
+ 
+ Big o notion : nlogn
